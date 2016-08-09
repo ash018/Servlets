@@ -18,8 +18,12 @@ public class SingleServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	private String msg;
+	
 	public void init() throws ServletException{
 		msg = "Dhiki Dhiki agun jole";
+	}
+	public void printName(){
+		System.out.println("Testing Git");
 	}
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
@@ -57,6 +61,7 @@ public class SingleServlet extends HttpServlet {
 		                "</ul>\n" +
 		                "</body></html>");
 		  }
+	      
 		  // Method to handle POST method request.
 		  public void doPost(HttpServletRequest request,
 		                     HttpServletResponse response)
